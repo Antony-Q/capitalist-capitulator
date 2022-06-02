@@ -1,9 +1,18 @@
-const express = require('express');
-const router = express.Router();
+const connection = require('./connection')
 
-router.use(require('./candidateRoutes'));
-router.use(require('./partyRoutes'));
-router.use(require('./voterRoutes'));
-router.use(require('./voteRoutes'));
+class DB {
+    constructor(connection) {
+        this.connection = connection;
+    }
 
-module.exports = router;
+    findAllEmployees1() {
+        return connection.query('SELECT * FROM employees');
+    }
+
+    addEmployee(employee) {
+        return this.connection.query('INSERT INTO employees SET ?', employee);
+    }
+
+}
+
+module.exports = new DB(connection);
