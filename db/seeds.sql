@@ -1,5 +1,10 @@
-INSERT INTO voters
-  (first_name, last_name, email)
+INSERT INTO voters(
+  first_name, 
+  last_name, 
+  job titles, 
+  departments, 
+  salaries, 
+  managers)
 VALUES
   ('James', 'Fraser', 'jf@goldenbough.edu'),
   ('Jack', 'London', 'jlondon@ualaska.edu'),
