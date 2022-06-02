@@ -1,10 +1,10 @@
-INSERT INTO voters(
+INSERT INTO employees(
   first_name, 
   last_name, 
-  job titles, 
-  departments, 
-  salaries, 
-  managers)
+  job title, 
+  department, 
+  salary, 
+  manager)
 VALUES
   ('James', 'Fraser', 'jf@goldenbough.edu'),
   ('Jack', 'London', 'jlondon@ualaska.edu'),
