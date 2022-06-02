@@ -1,3 +1,20 @@
+SELECT * FROM department; 
+SELECT * FROM roles;
+SELECT * FROM employees;
+
+INSERT INTO employees(first_name, last_name, job_title_id, manager_id)
+        VALUES
+        ("Zed", "Ded",'1',1),
+        ("Bart", "Chalmers",'1',1),
+        ("Randy", "Johnson",'2',1),
+        ("Mikayla", "Smith",'2',1),
+        ("Rhonda", "Beesly",'3',2),
+        ("Seth", "MacFarlane",'3',2),
+        ("Regi", "Struup",'4',2),
+        ("James", "Marsh",'4',2)
+        ;
+
+
 INSERT INTO employees(
   first_name, 
   last_name, 
