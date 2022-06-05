@@ -2,7 +2,7 @@ SELECT * FROM department;
 SELECT * FROM roles;
 SELECT * FROM employees;
 
-INSERT INTO employees(first_name, last_name, job_title_id, manager_id)
+INSERT INTO employees(first_name, last_name, role_id, manager_id)
         VALUES
         ("Zed", "Ded",'1',1),
         ("Bart", "Chalmers",'1',1),

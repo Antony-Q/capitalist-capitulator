@@ -160,7 +160,7 @@ function newEmployee() {
         {
 
             type: "number",
-            message: "Enter the employees job title id. 1:Dish washer   2:Server   3:Line Cook   4:Lower Manager",
+            message: "Enter the employees role id. 1:Dish washer   2:Server   3:Line Cook   4:Lower Manager",
             name: 'RoleID',
 
         },
