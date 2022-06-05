@@ -18,7 +18,7 @@ Developers frequently have to create interfaces that allow non-developers to eas
 Download the application folder. Use Terminal to navigate to the project directory and type the following: `npm start`. May require `npm install` first, if an error occurs.
 
 Click [here](https://drive.google.com/file/d/1ax_Vt5oLg7nQEkWvBgfn_CwIDLSQCx7B/view) for a short video on installation and a demonstration of the app in action.
-  
+
 ## Contributions
 Antony Quinones</br>
   
