@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 const db = require('../../db/connection');
 const inquirer = require('inquirer');
+const cTable = require('console.table');
 
 const rolesArray = [];
 
@@ -29,7 +30,7 @@ function viewEmployees() {
 
         if (err) throw err;
         console.log(("Employees: "));
-        console.table(res);
+        cTable(res);
         inquirer.prompt([
 
             {
@@ -70,7 +71,7 @@ function viewRoles() {
         console.log(("2: Server"));
         console.log(("3: Line Cook"));
         console.log(("3: Lower Manager"));
-        console.table(res);
+        cTable(res);
         inquirer.prompt([
 
             {
@@ -108,7 +109,7 @@ function viewDepartments() {
 
         if (err) throw err;
         console.log(("Departments:"));
-        console.table(res);
+        cTable(res);
         inquirer.prompt([
 
             {
@@ -178,7 +179,7 @@ function newEmployee() {
             db.query(sql, crit, function (err, response) {
 
                 if (err) throw err;
-                console.table(response);
+                cTable(response);
                 inquirer.prompt([
 
                     {
@@ -230,7 +231,7 @@ function newRoles() {
             db.query(sql, crit, function (err, response) {
 
                 if (err) throw err;
-                console.table(response);
+                cTable(response);
                 inquirer.prompt([
                     {
 
@@ -277,7 +278,7 @@ function newRoles(data) {
             const sql = 'INSERT INTO roles(title, salary) VALUES (?,?)';
             db.query(sql, crit, function (err, response) {
                 if (err) throw err;
-                console.table(response);
+                cTable(response);
                 inquirer.prompt([
                     {
                         type: 'list',
@@ -323,7 +324,7 @@ function newDepartments() {
             db.query(sql, crit, function (err, response) {
 
                 if (err) throw err;
-                console.table(response);
+                cTable(response);
                 inquirer.prompt([
 
                     {
