@@ -1,3 +1,5 @@
+var express = require('express');
+var router = express.Router();
 const db = require('../../db/connection');
 const inquirer = require('inquirer');
 
@@ -434,3 +436,5 @@ function init() {
         }
     )
 };
+
+module.exports = router;

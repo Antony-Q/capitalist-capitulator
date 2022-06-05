@@ -1,4 +1,5 @@
-const express = require('express');
+var express = require('express');
+var routes = express.Router();
 const db = require('./db/connection');
 const apiRoutes = require('./routes/apiRoutes');
 
@@ -9,6 +10,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.use('/api', apiRoutes);
+app.use(routes);
 
 app.use((req, res) => {
   res.status(404).end();

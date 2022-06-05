@@ -1,3 +1,5 @@
+var express = require('express');
+var router = express.Router();
 const connection = require('../db/connection')
 
 class DB {
@@ -15,4 +17,5 @@ class DB {
 
 }
 
+module.exports = router;
 module.exports = new DB(connection);

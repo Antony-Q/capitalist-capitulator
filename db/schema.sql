@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS tracker;
-CREATE DATABASE tracker;
-USE tracker;
+DROP DATABASE IF EXISTS capitalist_capitulator_db;
+CREATE DATABASE capitalist_capitulator_db;
+USE capitalist_capitulator_db;
 
 CREATE TABLE employees(
 id INT AUTO_INCREMENT,
